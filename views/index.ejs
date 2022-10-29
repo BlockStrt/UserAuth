@@ -1,0 +1,59 @@
+<link href= "/public/styles/index.css" rel="stylesheet" type="text/css" />
+
+<div id="fullpage">
+    <section class="section" id="s1">
+        <a id="intro-page"></a>
+    <div class="cursor"></div>
+<div class="shapes">
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+</div>
+<div class="content">
+  <h1>Welcome</h1>
+  <div class=round><input type=checkbox id=onoff name=onoff />
+    <div class=back>
+        <label class=but for=onoff>
+            <span class=on>0</span>
+            <!-- <span class=off>I -->
+                <a href="#s2"><span 
+                                class=off
+                                onclick="scrollFunction1()">I</a>
+            </span>
+        </label>
+    </div></div>
+</div>
+</section>
+<!-- todo: fix input on form. Make site clicking in sync. Loading needs to appear no more tha 6 seconds -->
+
+
+
+<section class="section" id="s2" method="POST" action="/index">
+    <a id="loading-page"></a>
+    <h2 id="loading-title">One Second...<br>Loading</h2>
+    <a href="./login">
+            <div class="mosaic-loader next-section" >
+            <div class="cell d-0" name="cell" type="cell"></div>
+            <div class="cell d-1" name="cell" type="cell"></div>
+            <div class="cell d-2" name="cell" type="cell"></div>
+            <div class="cell d-3" name="cell" type="cell"></div>
+            <div class="cell d-1" name="cell" type="cell"></div>
+            <div class="cell d-2" name="cell" type="cell"></div>
+            <div class="cell d-3" name="cell" type="cell"></div>
+            <div class="cell d-4" name="cell" type="cell"></div>
+            <div class="cell d-2" name="cell" type="cell"></div>
+            <div class="cell d-3" name="cell" type="cell"></div>
+            <div class="cell d-4" name="cell" type="cell"></div>
+            <div class="cell d-5" name="cell" type="cell"></div>
+            <div class="cell d-3" name="cell" type="cell"></div>
+            <div class="cell d-4" name="cell" type="cell"></div>
+            <div class="cell d-5" name="cell" type="cell"></div>
+            <div class="cell d-6" name="cell" type="cell"></div>
+            </div>
+          </a>
+</section>
+
+</div>
+
+<script type="text/javascript" src="/public/js/animation.js"></script>
+<script src="/public/js/gsap.min.js"></script>
