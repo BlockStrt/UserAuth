@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "netlify-lambda build public",
     "start": "nodemon server.js"
   },
   "keywords": [],
@@ -18,7 +17,6 @@
     "express-flash": "^0.0.2",
     "express-session": "^1.17.3",
     "method-override": "^3.0.0",
-    "netlify-lambda": "^2.0.15",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0"
   },
