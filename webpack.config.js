@@ -8,7 +8,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name][contenthash].js',
+        filename: '[name][contenthash].ejs',
         clean: true,
         assetModuleFilename: '[name][ext]',
     },
@@ -44,7 +44,7 @@ module.exports = {
         plugins: [
             new HtmlWebpackPlugin({
                 title: 'Webpack App',
-                filename: 'index.html',
+                filename: 'index.js',
                 template: 'build/template.html'
             }),
         ],
