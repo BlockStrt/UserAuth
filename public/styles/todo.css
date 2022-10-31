@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 /* Variables */
 :root {
 	--primary: #EA40A4;
@@ -26,7 +27,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'montserrat', sans-serif;
+	font-family: 'Julius Sans One', sans-serif;
+
 }
 
 input:not([type="radio"]):not([type="checkbox"]), button {
@@ -39,8 +41,7 @@ input:not([type="radio"]):not([type="checkbox"]), button {
 /* End of Resets */
 
 body {
-	background: var(--light);
-	color: var(--dark);
+	background-image: linear-gradient(to right, #380036 0%, #0CBABA 100%);
 }
 
 section {
@@ -54,14 +55,14 @@ section {
 
 
 h3 {
-	color: var(--dark);
+	color: #99b5b6;
 	font-size: 1rem;
 	font-weight: 400;
 	margin-bottom: 0.5rem;
 }
 
 h4 {
-	color: var(--grey);
+	color: #99b5b6;
 	font-size: 0.875rem;
 	font-weight: 700;
 	margin-bottom: 0.5rem;
@@ -82,37 +83,62 @@ h4 {
 
 .greeting .title, 
 .greeting .title input {
-	color: var(--dark);
+	color: #99b5b6;
 	font-size: 1.5rem;
 	font-weight: 700;
 }
 /* Logout Button */
-#logout{
-	padding: 10px 30px;
-	font-size: 24px;
-	cursor: pointer;
-	border-radius: 7px;
-	border-bottom-left-radius: 0;
-	background-color: var(--personal);
-	color: white;
-	transition: all 0.3s;
+
+.logout {
+  background-color: #499894;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
-#logout:hover {
-	border-radius: 0px;
-	color: var(--feedback-primary-color);
-	background-color: var(--personal-glow);
-	background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffacac' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-	animation: animatedBackground 5s linear infinite alternate;
+
+.logout:focus {
+  outline: 0;
+}
+
+.logout:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.logout:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+	.logout {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
   }
-  
-  @keyframes animatedBackground {
-	from {
-	  background-position: 0 0;
-	}
-	to {
-	  background-position: 100% 0;
-	}
-  }
+}
 /* End of Logout Button */
 
 .create-todo input[type="text"] {
@@ -204,7 +230,7 @@ input:checked ~ .bubble::after {
 	color: #FFF;
 	font-weight: 700;
 	text-transform: uppercase;
-	background-color: var(--primary);
+	background-color: #499894;
 	box-shadow: var(--personal-glow);
 	border-radius: 0.5rem;
 	cursor: pointer;
@@ -264,11 +290,11 @@ input:checked ~ .bubble::after {
 
 .todo-item .actions .edit {
 	margin-right: 0.5rem;
-	background-color: var(--primary);
+	background-color: #5faea2;
 }
 
 .todo-item .actions .delete {
-	background-color: var(--danger);
+	background-color: var(--primary);
 }
 
 .todo-item.done .todo-content input {

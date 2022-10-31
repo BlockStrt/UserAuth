@@ -1,7 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+
 html{
   scroll-behavior: smooth;
 }
+/* glass effect */
+/* .heading-glass{
+  background: transparent;
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  backdrop-filter: blur(15.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  border-radius: 30px;
+  
+} */
+  .blur{
+    position: absolute;
+    margin-left: 10%;
+    width: 55%;
+    height: 200px;
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(5.3px);
+  }
 
+/* end of glass effect */
 .cursor {
   position: fixed;
   background: #2128bd;
@@ -70,7 +91,7 @@ body, body * {
 }
 
 body{
-    font-family: Montserrat, sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
     font-weight: 900;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -89,9 +110,8 @@ body{
     .on{
     color:#bbb;
     top:10px;
-      -webkit-transition:all 0.1s;
-    font-family:sans-serif;
-  
+    -webkit-transition:all 0.1s;
+    font-family: 'Julius Sans One', sans-serif;
     }
     .off{
     bottom:5px;
@@ -241,7 +261,8 @@ body{
     /* section 2 of homepage */
 
     #s2 {
-      background: #102131;  
+      /* background: #102131;   */
+      background: #8693AB;
       display: flex;
       flex-direction: column;
       align-items: center;

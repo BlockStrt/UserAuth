@@ -1,29 +1,118 @@
-<section class="section next-section" id="s3">
-    
-    <!-- todo: create a sign up page -->
+<link href= "/public/styles/register.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<div class="registration-form">
+  <header>
+    <h1>Sign Up</h1>
+    <p>Fill in all informations</p>
+  </header>
+  <form id="signup-form" method="POST" action="/register">
+    <div class="input-section email-section"> 
+      <input class="email" type="email" name="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off"/>
+            <div class="animated-button">
+              <span class="icon-paper-plane"><i class="fa fa-envelope-o"></i>
+              </span>
+              <span class="next-button email"><i class="fa fa-arrow-up"></i>
+              </span>
+            </div>
+    </div>
+    <div class="input-section password-section folded">
+      <input class="password" type="password" name="password" placeholder="ENTER YOUR PASSWORD HERE"/>
+     
+      
+            <div class="animated-button">
+              <span class="icon-lock"><i class="fa fa-lock"></i>
+              </span>
+              <span class="next-button password" id="next-button-password">
+                <i class="fa fa-arrow-up"></i>
+              </span>
+            </div>
+
+    </div>
+
+    <div class="success"> 
+      <p>ACCOUNT CREATED</p>
+      <button class="button" role="button">Log In</button>
+    </div>
+  </form>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/public/js/animation.js"></script>
+
+
+
+
+
+<!-- <section class="section next-section" id="s3">
+  <div class="back"></div>
+  <div class="registration-form">
+    <header>
+      <h1>Sign Up</h1>
+      <p>Fill in all informations</p>
+    </header>
     <form id="signup-form" method="POST" action="/register""   >
         
-          <div class="field-wrap">
+          <div class="field-wrap input-section name-section">
             <label class="form-label2"  for="name">
               Name <span class="req">*</span>
             </label>
             <input class="cardinput" id="name" name="name"required autocomplete="off"/>
+            
+                  <div class="animated-button">
+                    <span class="icon-paper-plane">
+                      <i class="fa fa-envelope-o"></i>
+                    </span>
+                    <span class="next-button name">
+                      <i class="fa fa-arrow-up"></i>
+                    </span>
+                  </div>
           </div>
 
-          <div class="field-wrap">
+       
+        
+
+          <div class="field-wrap input-section email-section">
             <label class="form-label2" for="email" >
               Email Address<span class="req">*</span>
             </label>
             <input class="cardinput" id="email" type="email" name="email"required autocomplete="off"/>
+
+                  <div class="animated-button">
+                    <span class="icon-lock">
+                      <i class="fa fa-lock"></i>
+                    </span>
+                    <span class="next-button email">
+                      <i class="fa fa-arrow-up"></i>
+                    </span>
+                  </div>
           </div>
 
-          <div class="field-wrap">
+
+
+          <div class="field-wrap password-section folded">
             <label class="form-label2" for="password">
               Set A Password<span class="req">*</span>
             </label>
             <input class="cardinput" id="password" name="password" type="password" required autocomplete="off"/>
+                  <div class="animated-button">
+                    <span class="icon-lock">
+                      <i class="fa fa-lock"></i>
+                    </span>
+                    <span class="next-button password">
+                      <i class="fa fa-arrow-up"></i>
+                    </span>
+                  </div>
+                </div>
+          
+          <div class="success"> 
+            <p>ACCOUNT CREATED</p>
           </div>
         <button id="card-signup" >Sign up</button>
     </form>
     </div>
-</section>
+
+</section> -->
